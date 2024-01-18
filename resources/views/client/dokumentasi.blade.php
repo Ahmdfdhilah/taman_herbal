@@ -5,23 +5,29 @@
         <div class="w-fit px-24 font-bold text-2xl pt-16 pb-4">
             <div class="border-b-4 border-[#111]">Dokumentasi</div>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 px-8">
+        <div class="flex flex-wrap justify-center lg:justify-normal gap-10 pt-12 pb-48 px-8" data-aos="fade-up" data-aos-delay="200">
             @foreach ($paginatedData as $index => $item)
-                <div data-aos="fade-up" class="grid gap-4 h-[250px] md:h-[250px] relative">
-                    <div
-                        class="relative group border border-gray-300 rounded overflow-hidden bg-gray-100 hover:bg-gray-200 transition-all duration-300">
-                        <img class="object-cover w-full h-full rounded-lg transition-all duration-300 group-hover:brightness-75"
-                            src="/image/{{ $item['img'] }}" alt="">
-                        <div
-                            class="overlay absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100 bg-black bg-opacity-50">
-                            <p class="text-white text-lg p-2">{{ $item['name'] }}</p>
-                        </div>
+                <div class="block rounded-xl w-full lg:w-[30%] bg-white shadow-xl">
+                    <div>
+                        <img class="rounded-t-xl object-cover w-full h-48 mt-2" src="/image/{{ $item['img'] }}"
+                            alt=""/>
                     </div>
+
+                    <div class="p-6">
+                        <h5 class="mb-2 text-lg font-bold tracking-wide text-neutral-800">
+                           Nama : {{ $item['name'] }}
+                        </h5>
+                        <p class="mb-2 text-base text-neutral-500">
+                        kegiatan : {{ $item['desc'] }}
+                        </p>
+
+                    </div>
+                    
                 </div>
             @endforeach
         </div>
 
-        {{-- <nav class="w-fit mx-auto bg-gray-100 p-3 my-8 rounded-xl">
+        <nav class="w-fit mx-auto bg-gray-100 p-3 my-8 rounded-xl">
             <ul class="list-style-none flex">
                 @if ($paginatedData->previousPageUrl())
                     <li>
@@ -48,6 +54,7 @@
                     </li>
                 @endif
             </ul>
-        </nav> --}}
+        </nav>
     </main>
+
 @endsection

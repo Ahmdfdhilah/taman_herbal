@@ -1,8 +1,6 @@
 /* resources/css/app.css */
-
-@import 'bootstrap-icons/font/bootstrap-icons.css';
-
-/* Sisanya dari file CSS, seperti Tailwind CSS */
+@import 'bootstrap-icons/font/bootstrap-icons.css';/* Sisanya dari file CSS, seperti Tailwind CSS */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Fredoka:wght@300..700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,5 +18,9 @@
 .card:hover {
     transform: scale(1.05);
 }
-
+body{
+    font-family: "Balsamiq Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 /* Add more custom styles as needed */

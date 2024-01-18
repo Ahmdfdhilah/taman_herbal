@@ -38,6 +38,17 @@
     </script>
 
     <style>
+        body {
+            font-family: "Balsamiq Sans", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .title {
+            font-family: "Fredoka", sans-serif !important;
+            font-weight: 800 !important;
+        }
+
         .main,
         .header {
             position: relative;
@@ -207,8 +218,10 @@
             <div class="container mx-auto flex flex-wrap items-center justify-between">
                 <div class="flex items-center">
                     <div class="flex flex-col items-left">
-                        <div class="text-s text-[#111] whitespace-nowrap leading-6 py-2 pl-12 pr-2 bg-gray-200">Rumah
-                            Herbal Desa</div>
+                        <div class="title">
+                            <div class="text-lg text-[#fff] leading-6 pl-12 pr-2">Taman Herbal Desa</div>
+                            <div class="text-s text-[#fff] leading-6 pl-12 pr-2">Desa Rukti Endah</div>
+                        </div>
                     </div>
                 </div>
                 <button data-collapse-toggle="mobile-menu" type="button"
@@ -228,7 +241,7 @@
                     </svg>
                 </button>
                 <div class="hidden lg:block w-full md:w-auto" id="mobile-menu">
-                    <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
+                    <ul class="flex-col md:flex-row flex md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                         <li>
                             <a href="/"
                                 class="bg-[#3D7C17] hover:text-[#FFF100] md:bg-transparent {{ Route::currentRouteName() == 'home' ? 'text-white bg-[#3D7C17] text-sm' : 'text-white text-sm' }} rounded lg:bg-transparent  {{ Route::currentRouteName() == 'home' ? 'lg:text-[#FFF100]' : 'lg:text-grey-700' }} block pl-3 pr-4 py-2 md:p-0 rounded focus:outline-none">Beranda</a>
@@ -273,11 +286,11 @@
     <footer class="bg-[#B9CD3C]">
         <div class="container mx-auto flex flex-col md:flex-row px-8 lg:gap-12">
             <div class="w-full md:w-1/3 p-7 flex flex-col">
-                <h4 class="text-lg font-bold mb-2 text-[#111]">Alamat</h4>
-                <div class="text-s text-[#111] w-50 pb-4">Rukti Endah, Rukti Endah, Kec. Seputih Raman, Kab. Lampung
+                <h4 class="text-lg font-bold mb-2 text-[#111]">Kontak Kami</h4>
+                <div class="text-s text-[#111] w-76 font-bold pb-4">Rukti Endah, Rukti Endah, Kec. Seputih Raman, Kab. Lampung
                     Tengah Prov. Lampung</div>
-                <div class="text-xs text-[#111] ">Phone : 082184937668</div>
-                <div class="text-xs text-[#111] ">Email : ruktiendah62@gmail.com</div>
+                <div class="text-xs text-[#111] font-bold">Phone : 082184937668</div>
+                <div class="text-xs text-[#111] font-bold">Email : ruktiendah62@gmail.com</div>
             </div>
 
         </div>
@@ -296,7 +309,7 @@
     <div id="loader-overlay" class="loader-overlay">
         <div class="loader"></div>
     </div>
-   
+
     <script src="/lte/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
     <script src="/lte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -6,11 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taman Herbal</title>
     {{-- @vite('resources/css/app.css') --}}
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"
         integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/lte/plugins/fontawesome-free/css/all.min.css">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="/lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/lte/dist/css/adminlte.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -29,6 +38,17 @@
     </script>
 
     <style>
+        body {
+            font-family: "Balsamiq Sans", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .title {
+            font-family: "Fredoka", sans-serif !important;
+            font-weight: 800 !important;
+        }
+
         .main,
         .header {
             position: relative;
@@ -198,8 +218,10 @@
             <div class="container mx-auto flex flex-wrap items-center justify-between">
                 <div class="flex items-center">
                     <div class="flex flex-col items-left">
-                        <div class="text-s text-[#111] whitespace-nowrap leading-6 py-2 pl-12 pr-2 bg-gray-200">Rumah
-                            Herbal Desa</div>
+                        <div class="title">
+                            <div class="text-lg text-[#fff] leading-6 pl-12 pr-2">Taman Herbal Desa</div>
+                            <div class="text-s text-[#fff] leading-6 pl-12 pr-2">Desa Rukti Endah</div>
+                        </div>
                     </div>
                 </div>
                 <button data-collapse-toggle="mobile-menu" type="button"
@@ -219,7 +241,7 @@
                     </svg>
                 </button>
                 <div class="hidden lg:block w-full md:w-auto" id="mobile-menu">
-                    <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
+                    <ul class="flex-col md:flex-row flex md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                         <li>
                             <a href="/admin/dashboard"
                                 class="bg-[#3D7C17] hover:text-[#FFF100] md:bg-transparent {{ Route::currentRouteName() == 'dashboard' ? 'text-white bg-[#3D7C17] text-sm' : 'text-white text-sm' }} rounded lg:bg-transparent  {{ Route::currentRouteName() == 'dashboard' ? 'lg:text-[#FFF100]' : 'lg:text-grey-700' }} block pl-3 pr-4 py-2 md:p-0 rounded focus:outline-none">Beranda</a>
@@ -264,15 +286,13 @@
     <footer class="bg-[#B9CD3C]">
         <div class="container mx-auto flex flex-col md:flex-row px-8 lg:gap-12">
             <div class="w-full md:w-1/3 p-7 flex flex-col">
-                <h4 class="text-lg font-bold mb-2 text-[#111]">Alamat</h4>
-                <div class="text-s text-[#111] w-50 pb-4">Rukti Endah, Rukti Endah, Kec. Seputih Raman, Kab. Lampung
+                <h4 class="text-lg font-bold mb-2 text-[#111]">Kontak Kami</h4>
+                <div class="text-s text-[#111] w-76 font-bold pb-4">Rukti Endah, Rukti Endah, Kec. Seputih Raman, Kab. Lampung
                     Tengah Prov. Lampung</div>
-                <div class="text-xs text-[#111] ">Phone : 082184937668</div>
-                <div class="text-xs text-[#111] ">Email : ruktiendah62@gmail.com</div>
+                <div class="text-xs text-[#111] font-bold">Phone : 082184937668</div>
+                <div class="text-xs text-[#111] font-bold">Email : ruktiendah62@gmail.com</div>
             </div>
-
         </div>
-
     </footer>
     {{-- move keatas --}}
     <button id="moveToTopBtn" class="hidden fixed bottom-4 right-4 bg-[#434343] text-white p-2 rounded-full shadow-md">

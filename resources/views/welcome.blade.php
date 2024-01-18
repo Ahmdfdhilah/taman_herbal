@@ -80,16 +80,16 @@
             <div class="border-b-4 border-[#111]">Peta</div>
         </div>
         <div class="px-8 pb-16">
-            <div class="">Peta daya dukung dan daya tampung</div>
-            <img src="./frontend/map1.jpg" class="lg:w-1/2" alt="">
+            <div class="text-center pb-2">Peta daya dukung dan daya tampung</div>
+            <img src="./frontend/map1.jpg" class="lg:w-1/2 mx-auto" alt="">
         </div>
         <div class="px-8 pb-16">
-            <div class="">Peta aliran air sungai dan tutupan lahan</div>
-            <img src="./frontend/map2.jpg" class="lg:w-1/2" alt="">
+            <div class="text-center pb-2">Peta aliran air sungai dan tutupan lahan</div>
+            <img src="./frontend/map2.jpg" class="lg:w-1/2 mx-auto" alt="">
         </div>
-        <div class="px-8 ">
-            <div class="">Peta kerapatan vegetasi</div>
-            <img src="./frontend/map3.jpg" class="lg:w-1/2" alt="">
+        <div class="px-8">
+            <div class="text-center pb-2">Peta kerapatan vegetasi</div>
+            <img src="./frontend/map3.jpg" class="lg:w-1/2 mx-auto" alt="">
         </div>
     </main>
 @endsection

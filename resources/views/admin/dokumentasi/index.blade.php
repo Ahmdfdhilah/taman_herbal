@@ -1,12 +1,12 @@
 @extends('layouts.admin.app')
 
-@section('title', 'Data Pengelolaan')
+@section('title', 'Data Dokumentasi')
 
 @section('content')
 
 <div class="flex flex-col min-h-screen justify-between">
   <div class="container mx-auto mt-8 px-8">
-    <div class="mb-4">    <a href="{{ route('pengelolaan.create') }}" class="btn btn-primary px-2 py-1 rounded-md hover:bg-gray-300 bg-blue-500">Tambah Data</a>
+    <div class="mb-4">    <a href="{{ route('dokumentasi.create') }}" class="btn btn-primary px-2 py-1 rounded-md hover:bg-gray-300 bg-blue-500">Tambah Data</a>
     </div>
 
     @if ($message = Session::get('message'))
